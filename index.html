@@ -1426,11 +1426,13 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="copyright">© 2025 Piotr Moczybroda</div>
+            <div class="copyright">© <span id="year"></span> Piotr Moczybroda</div>
         </div>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
     </footer>
 
     <script>
